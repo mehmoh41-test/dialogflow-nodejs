@@ -4,7 +4,7 @@ require('dotenv').config();
 
 // Initialize OpenAI with the new API structure
 const openai = new OpenAI({
-    apiKey:"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",
+    apiKey:"",
 });
 
 const textGeneration = async (prompt) => {
@@ -83,4 +83,5 @@ app.post('/dialogflow', async (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is up and running at ${PORT}`);
+
 });
